@@ -1,21 +1,16 @@
-// ========================================
-// FILE: script.js
-// Program Nilai Siswa
-// ========================================
-
 // Data Siswa
 const nama = ["Asep", "Iwan", "Cepi", "Agus", "Dadang"];
 const tugas = [80, 75, 70, 65, 60];
 const uts = [95, 75, 80, 40, 70];
 const uas = [85, 90, 90, 55, 60];
 
-// Fungsi untuk menghitung Nilai Akhir (NA)
+// menghitung Nilai Akhir (NA)
 // Rumus: NA = 40% Tugas + 30% UTS + 30% UAS
 function hitungNA(nilaiTugas, nilaiUTS, nilaiUAS) {
     return (0.4 * nilaiTugas) + (0.3 * nilaiUTS) + (0.3 * nilaiUAS);
 }
 
-// Fungsi untuk menampilkan tabel
+//  menampilkan tabel
 function tampilkanTabel() {
     const tbody = document.getElementById('tabelBody');
     let html = '';
@@ -38,5 +33,4 @@ function tampilkanTabel() {
     tbody.innerHTML = html;
 }
 
-// Jalankan program saat halaman dimuat
 tampilkanTabel();
